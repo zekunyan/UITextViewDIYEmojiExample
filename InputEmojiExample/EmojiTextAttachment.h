@@ -10,4 +10,5 @@
 
 @interface EmojiTextAttachment : NSTextAttachment
 @property(strong, nonatomic) NSString *emojiTag;
+@property(assign, nonatomic) CGFloat emojiSize;  //For emoji image size
 @end

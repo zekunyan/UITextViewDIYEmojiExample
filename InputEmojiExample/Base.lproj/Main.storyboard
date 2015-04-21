@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
@@ -19,13 +19,13 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="exU-DY-geV">
-                                <rect key="frame" x="0.0" y="20" width="320" height="370"/>
+                                <rect key="frame" x="0.0" y="20" width="320" height="322"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Hb-qP-R6o">
-                                <rect key="frame" x="0.0" y="391" width="320" height="30"/>
+                                <rect key="frame" x="0.0" y="343" width="320" height="30"/>
                                 <color key="backgroundColor" red="0.60784316062927246" green="0.60784316062927246" blue="0.60784316062927246" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="l7H-oT-m2P"/>
@@ -39,7 +39,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Output: " lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="acP-5B-ctn">
-                                <rect key="frame" x="0.0" y="425" width="320" height="90"/>
+                                <rect key="frame" x="0.0" y="377" width="320" height="90"/>
                                 <color key="backgroundColor" red="0.60784316062927246" green="0.60784316062927246" blue="0.60784316062927246" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="90" id="JKB-jJ-w4K"/>
@@ -49,9 +49,9 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ICI-ig-nxY" userLabel="bottomView">
-                                <rect key="frame" x="0.0" y="520" width="320" height="48"/>
+                                <rect key="frame" x="0.0" y="472" width="320" height="48"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cKI-x9-m7d" userLabel="emoji_1">
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cKI-x9-m7d" userLabel="emoji_1">
                                         <rect key="frame" x="0.0" y="0.0" width="80" height="48"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="48" id="6x5-Dl-w8h"/>
@@ -63,7 +63,7 @@
                                             <action selector="insertEmoji:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="TFy-1D-g7q"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BLr-9a-6wb" userLabel="emoji_2">
+                                    <button opaque="NO" tag="1" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BLr-9a-6wb" userLabel="emoji_2">
                                         <rect key="frame" x="80" y="0.0" width="80" height="48"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="48" id="M0A-20-fcT"/>
@@ -75,7 +75,7 @@
                                             <action selector="insertEmoji:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="EVK-4b-uCc"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KFw-TK-pAn" userLabel="emoji_3">
+                                    <button opaque="NO" tag="2" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KFw-TK-pAn" userLabel="emoji_3">
                                         <rect key="frame" x="160" y="0.0" width="80" height="48"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="48" id="IIA-C5-W18"/>
@@ -87,7 +87,7 @@
                                             <action selector="insertEmoji:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="BCg-Yy-RPK"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CUN-2k-JTj" userLabel="emoji_4">
+                                    <button opaque="NO" tag="3" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CUN-2k-JTj" userLabel="emoji_4">
                                         <rect key="frame" x="240" y="0.0" width="80" height="48"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="48" id="HZn-Y8-24x"/>
@@ -121,27 +121,37 @@
                                     <constraint firstItem="KFw-TK-pAn" firstAttribute="width" secondItem="ICI-ig-nxY" secondAttribute="width" multiplier="0.25" id="xrP-Sw-oYu"/>
                                 </constraints>
                             </view>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="WfM-6x-5n8">
+                                <rect key="frame" x="14" y="530" width="292" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="3hL-2S-p5j"/>
+                                </constraints>
+                            </slider>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="WfM-6x-5n8" secondAttribute="bottom" constant="8" id="0Vk-QE-k12"/>
                             <constraint firstItem="ICI-ig-nxY" firstAttribute="top" secondItem="acP-5B-ctn" secondAttribute="bottom" constant="5" id="2HW-QF-Vew"/>
                             <constraint firstAttribute="trailingMargin" secondItem="acP-5B-ctn" secondAttribute="trailing" constant="-16" id="5FG-Ve-YFV"/>
                             <constraint firstItem="1Hb-qP-R6o" firstAttribute="top" secondItem="exU-DY-geV" secondAttribute="bottom" constant="1" id="5wl-h0-3iM"/>
                             <constraint firstItem="acP-5B-ctn" firstAttribute="top" secondItem="1Hb-qP-R6o" secondAttribute="bottom" constant="4" id="7y3-Po-tmd"/>
+                            <constraint firstItem="WfM-6x-5n8" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="8mf-U4-eTK"/>
                             <constraint firstAttribute="trailingMargin" secondItem="exU-DY-geV" secondAttribute="trailing" constant="-16" id="Cru-md-ZyQ"/>
                             <constraint firstAttribute="trailingMargin" secondItem="1Hb-qP-R6o" secondAttribute="trailing" constant="-16" id="JeT-vh-FrY"/>
                             <constraint firstAttribute="trailingMargin" secondItem="ICI-ig-nxY" secondAttribute="trailing" constant="-16" id="KNS-rD-1qc"/>
                             <constraint firstItem="exU-DY-geV" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="topMargin" constant="20" id="Tao-xY-4BF"/>
+                            <constraint firstItem="WfM-6x-5n8" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="dbO-Bd-P8V"/>
                             <constraint firstItem="ICI-ig-nxY" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="fc1-9R-FFG"/>
                             <constraint firstItem="acP-5B-ctn" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="kaA-Rv-6cw"/>
-                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="ICI-ig-nxY" secondAttribute="bottom" id="rRD-Zh-a8h"/>
                             <constraint firstItem="exU-DY-geV" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="tgW-HO-Jjb"/>
+                            <constraint firstItem="WfM-6x-5n8" firstAttribute="top" secondItem="ICI-ig-nxY" secondAttribute="bottom" constant="10" id="v2y-Md-5Q5"/>
                             <constraint firstItem="1Hb-qP-R6o" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="xiX-eH-18D"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
-                        <outlet property="bottomConstraint" destination="rRD-Zh-a8h" id="YmG-eN-vcV"/>
+                        <outlet property="bottomConstraint" destination="0Vk-QE-k12" id="xkJ-1S-ztC"/>
+                        <outlet property="emojiSizeSlider" destination="WfM-6x-5n8" id="Ok4-jR-GsD"/>
                         <outlet property="infoLabel" destination="acP-5B-ctn" id="WBB-HF-e39"/>
                         <outlet property="textView" destination="exU-DY-geV" id="cx2-KM-vsu"/>
                     </connections>
@@ -152,9 +162,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="emoji_1" width="32" height="32"/>
-        <image name="emoji_2" width="32" height="32"/>
-        <image name="emoji_3" width="32" height="32"/>
-        <image name="emoji_4" width="32" height="32"/>
+        <image name="emoji_1" width="64" height="64"/>
+        <image name="emoji_2" width="64" height="64"/>
+        <image name="emoji_3" width="64" height="64"/>
+        <image name="emoji_4" width="64" height="64"/>
     </resources>
 </document>

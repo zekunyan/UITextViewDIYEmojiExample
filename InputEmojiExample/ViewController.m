@@ -10,10 +10,15 @@
 #import "EmojiTextAttachment.h"
 #import "NSAttributedString+EmojiExtension.h"
 
+//Emoji default max size
+static const CGFloat EMOJI_MAX_SIZE = 64;
+
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UITextView *textView;
-@property (weak, nonatomic) IBOutlet NSLayoutConstraint *bottomConstraint;
 @property (weak, nonatomic) IBOutlet UILabel *infoLabel;
+@property (weak, nonatomic) IBOutlet UISlider *emojiSizeSlider;
+
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *bottomConstraint;
 
 @property (strong, nonatomic) NSArray *emojiTags;
 @property (strong, nonatomic) NSArray *emojiImages;
@@ -26,8 +31,8 @@
     
     //Init
     _emojiTags = @[@"[/emoji_1]", @"[/emoji_2]", @"[/emoji_3]", @"[/emoji_4]"];
-    _emojiImages = @[[UIImage imageNamed:@"emoji_1"], [UIImage imageNamed:@"emoji_2"],
-            [UIImage imageNamed:@"emoji_3"], [UIImage imageNamed:@"emoji_4"]];
+    _emojiImages = @[[UIImage imageNamed:@"emoji_1_big"], [UIImage imageNamed:@"emoji_2_big"],
+            [UIImage imageNamed:@"emoji_3_big"], [UIImage imageNamed:@"emoji_4_big"]];
 
     //Init text font
     [self resetTextStyle];
@@ -59,6 +64,9 @@
     //Set tag and image
     emojiTextAttachment.emojiTag = _emojiTags[(NSUInteger) sender.tag];
     emojiTextAttachment.image = _emojiImages[(NSUInteger) sender.tag];
+    
+    //Set emoji size
+    emojiTextAttachment.emojiSize = _emojiSizeSlider.value * EMOJI_MAX_SIZE;
 
     //Insert emoji image
     [_textView.textStorage insertAttributedString:[NSAttributedString attributedStringWithAttachment:emojiTextAttachment]
