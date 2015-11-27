@@ -66,7 +66,7 @@ static const CGFloat EMOJI_MAX_SIZE = 64;
     emojiTextAttachment.image = _emojiImages[(NSUInteger) sender.tag];
     
     //Set emoji size
-    emojiTextAttachment.emojiSize = _emojiSizeSlider.value * EMOJI_MAX_SIZE;
+    emojiTextAttachment.emojiSize = CGSizeMake(_emojiSizeSlider.value * EMOJI_MAX_SIZE, _emojiSizeSlider.value * EMOJI_MAX_SIZE);
 
     //Insert emoji image
     [_textView.textStorage insertAttributedString:[NSAttributedString attributedStringWithAttachment:emojiTextAttachment]

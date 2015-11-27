@@ -10,26 +10,6 @@
 
 @implementation EmojiTextAttachment
 - (CGRect)attachmentBoundsForTextContainer:(NSTextContainer *)textContainer proposedLineFragment:(CGRect)lineFrag glyphPosition:(CGPoint)position characterIndex:(NSUInteger)charIndex {
-    
-    //Return new image size
-    return [self scaleImageSizeToWidth:_emojiSize];
-}
-
-// Scale image size
-- (CGRect)scaleImageSizeToWidth:(CGFloat)width {
-    //Scale factor
-    CGFloat factor = 1.0;
-    
-    //Get image size
-    CGSize oriSize = [self.image size];
-    
-    //Calculate factor
-    factor = (CGFloat) (width / oriSize.width);
-    
-    //Get new size
-    CGRect newSize = CGRectMake(0, 0, oriSize.width * factor, oriSize.height * factor);
-    
-    return newSize;
-    
+    return CGRectMake(0, 0, _emojiSize.width, _emojiSize.height);
 }
 @end
