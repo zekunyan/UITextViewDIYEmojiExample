@@ -68,12 +68,20 @@ static const CGFloat EMOJI_MAX_SIZE = 64;
     //Set emoji size
     emojiTextAttachment.emojiSize = CGSizeMake(_emojiSizeSlider.value * EMOJI_MAX_SIZE, _emojiSizeSlider.value * EMOJI_MAX_SIZE);
 
+    // begin: changed by liu wei zhen: <<<
+    NSAttributedString *str = [NSAttributedString attributedStringWithAttachment:emojiTextAttachment];
+    NSRange selectedRange = self.textView.selectedRange;
+    if (selectedRange.length > 0) {
+        [self.textView.textStorage deleteCharactersInRange:selectedRange];
+    }
     //Insert emoji image
-    [_textView.textStorage insertAttributedString:[NSAttributedString attributedStringWithAttachment:emojiTextAttachment]
-                                          atIndex:_textView.selectedRange.location];
+    [self.textView.textStorage insertAttributedString:str atIndex:self.textView.selectedRange.location];
+    
+    self.textView.selectedRange = NSMakeRange(self.textView.selectedRange.location+1, 0); // self.textView.selectedRange.length
+    // end >>>
 
     //Move selection location
-    _textView.selectedRange = NSMakeRange(_textView.selectedRange.location + 1, _textView.selectedRange.length);
+    //_textView.selectedRange = NSMakeRange(_textView.selectedRange.location + 1, _textView.selectedRange.length);
 
     //Reset text style
     [self resetTextStyle];
