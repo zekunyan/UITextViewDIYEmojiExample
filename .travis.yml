@@ -1,0 +1,8 @@
+# references:
+# * http://www.objc.io/issue-6/travis-ci.html
+# * https://github.com/supermarin/xcpretty#usage
+
+osx_image: xcode8
+language: objective-c
+script:
+- set -o pipefail && xcodebuild clean build -scheme InputEmojiExample -sdk iphonesimulator10.0 -destination 'platform=iOS Simulator,name=iPhone 6,OS=10.0' ONLY_ACTIVE_ARCH=NO CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO | xcpretty
