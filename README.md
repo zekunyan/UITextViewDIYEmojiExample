@@ -1,7 +1,7 @@
 ## Example of adding custom Emoji image to UITextView
 
 ### Gif example
-![image](http://zorrochen.qiniudn.com/blog_resizable_nstextattachment_1.gif)
+![image](https://github.com/zekunyan/UITextViewDIYEmojiExample/raw/master/Resources/blog_resizable_nstextattachment_1.gif)
 
 
 ### How it work
@@ -11,3 +11,4 @@
 
 ### Contact me
 zekunyan@163.com
+
